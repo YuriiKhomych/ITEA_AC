@@ -1,15 +1,19 @@
-# my_list = [1,2,3,4]
-#
+my_list = [1, 2, 3, 4]
+
 # for item in my_list:
 #     print(item)
 #     if item == 3:
 #         break
 # else:
 #     print("fine")
-#
-# # while my_list:
-# #     my_list.pop()
-#
+    # если цикл НЕ прерывается то else отрабатывает
+
+while my_list:
+    if len(my_list) == 1:
+        continue
+    print(my_list.pop())
+else:
+    print('hello')
 #
 # def add_one(number):
 #      y = number + 1
@@ -89,6 +93,7 @@
 
 
 houses = ["Misha's house", "Darya's house", "Olen house", "Max's house"]
+
 
 # Each function call represents an elf doing his work
 # def deliver_presents_recursively(houses):
