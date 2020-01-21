@@ -8,12 +8,12 @@ my_list = [1, 2, 3, 4]
 #     print("fine")
     # если цикл НЕ прерывается то else отрабатывает
 
-while my_list:
-    if len(my_list) == 1:
-        continue
-    print(my_list.pop())
-else:
-    print('hello')
+# while my_list:
+#     if len(my_list) == 1:
+#         continue
+#     print(my_list.pop())
+# else:
+#     print('hello')
 #
 # def add_one(number):
 #      y = number + 1
@@ -177,17 +177,17 @@ houses = ["Misha's house", "Darya's house", "Olen house", "Max's house"]
 # function()
 
 
-def f1():
-    a = 1
-    b = 2
-
-    def f2():
-        # a += b
-        nonlocal a
-        a = a + b
-        return a
-
-    return f2()
-
-
-f1()
+# def f1():
+#     a = 1
+#     b = 2
+#
+#     def f2():
+#         # a += b
+#         nonlocal a
+#         a = a + b
+#         return a
+#
+#     return f2()
+#
+#
+# f1()

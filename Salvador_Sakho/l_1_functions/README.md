@@ -16,7 +16,7 @@ Create programs that:
 3. Get all insights objectives into list of strings
 4. Get all insights objectives into dict
 5. Get all insights campaign_id into dict and list of values
-5. Get all unique insights objectives
+6. Get all unique insights objectives
 6. Get all insights "metric_sums" and calculate sum and average for (sum, sum_level, sum_general)
 7. Sort list of insights by "type", "api", "report_name" and "objective"
 8. If "report_name" equal "device" make this value uppercase
