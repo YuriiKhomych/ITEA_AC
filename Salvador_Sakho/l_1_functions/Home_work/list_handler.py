@@ -2,13 +2,11 @@ import Salvador_Sakho.l_1_functions.Home_work.type_handler as type_handler
 import Salvador_Sakho.l_1_functions.Home_work.dict_handler as dict_handler
 import Salvador_Sakho.l_1_functions.Home_work.globals_for_work as global_data
 import Salvador_Sakho.l_1_functions.Home_work.action_handler as action_handler
-import Salvador_Sakho.l_1_functions.Home_work.keys_handler as keys_handler
 
 global_data.init()
 
 
 def handle_list_data(list_data, key=None, action=None, **collection):
-    keys_handler.check_key(list_data, key)
     for data in list_data:
         if type_handler.check_if_dict(data):
             dict_handler.handle_dict_data(data, collection=collection, action=action)

@@ -9,16 +9,14 @@ global_data.init()
 
 
 def handle_action(collection, key=None, value=None, action=None):
-    if action == 'remove_key':
-        keys_handler.check_key(collection, key)
+    if action in ['remove_key', 'entities_to_list']:
+        keys_handler.check_key(collection, key, action)
     elif action == 'to_dict':
         dict_handler.to_dict(key, value)
     elif action == 'to_list':
         list_handler.to_list([str(key), str(value)])
     elif action == 'to_set':
         set_handler.to_set(key, value)
-    elif action == 'entities_to_list':
-        keys_handler.check_key(collection, key)
     else:
         raise Exception(f'Unexpected type of action: {action}')
 

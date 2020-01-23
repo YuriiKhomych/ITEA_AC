@@ -13,7 +13,7 @@ global_data.init()
 def handle_dict_data(dictionary, action=None, **collection):
     temp_dict = copy(dictionary)
     for key, val in temp_dict.items():
-        keys_handler.check_key(dictionary, key)
+        keys_handler.check_key(dictionary, key, action)
         if type_handler.check_if_dict(val):
             handle_dict_data(val, collection=collection, action=action)
         elif type_handler.check_if_list(val):

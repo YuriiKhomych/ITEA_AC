@@ -10,6 +10,7 @@ list_comp = [line for line in insights]
 
 if __name__ == '__main__':
      action_handler.run_process(list_comp, action='entities_to_list')
+     print(global_data.entities_spend_sum)
     # keys_handler.check_and_manage(list_comp, 'entities')
     # keys_handler.remove_keys(list_comp, )
 
