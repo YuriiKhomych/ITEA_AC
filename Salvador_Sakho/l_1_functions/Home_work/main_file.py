@@ -1,24 +1,23 @@
-import Salvador_Sakho.l_1_functions.Home_work.keys_handler as keys_handler
-import Salvador_Sakho.l_1_functions.Home_work.list_handler as list_handler
-from Salvador_Sakho.l_1_functions.Home_work.dict_handler import metric_sums_case_handler
+import Salvador_Sakho.l_1_functions.Home_work.action_handler as action_handler
+from Salvador_Sakho.l_1_functions.Home_work import dict_handler, list_handler
 from Salvador_Sakho.l_1_functions.hw_start import insights
 import Salvador_Sakho.l_1_functions.Home_work.globals_for_work as global_data
 
 global_data.init()
-# "Raise error" нужно ли?
 list_comp = [line for line in insights]
 
+# todo: 8, 11(не ясна задача)
+
 if __name__ == '__main__':
-    list_handler.handle_list_data(list_comp, main_list=global_data.main_list, action='to_list')
-    list_handler.handle_list_data(list_comp, main_dict=global_data.main_dict, action='to_dict')
-    list_handler.handle_list_data(list_comp, action='campaign_id_collect')
-    list_handler.handle_list_data(list_comp, action='to_set')
+     action_handler.run_process(list_comp, action='entities_to_list')
+    # keys_handler.check_and_manage(list_comp, 'entities')
+    # keys_handler.remove_keys(list_comp, )
 
-    print(global_data.main_list)
-    print(global_data.campaign_id_dict)
-    print(global_data.main_set)
-    print(metric_sums_case_handler())
+    # print(list_handler.objective_case_handler(list_comp))
+    # print(dict_handler.campaign_id_case_handler(list_comp))
+    # dict_handler.metric_sums_case_handler(list_comp)
+    # print(set_handler.objective_case_handler(list_comp))
+    # print(dict_handler.report_name_case_handler(list_comp))
+    # print(dict_handler.page_id_case_handler(list_comp))
 
-    keys_handler.remove_keys(list_comp, ('period', 'count', 'total_count', 'page_id', 'link', 'status',
-                                         'days_in_data', ('table_columns', 'unit', 'EUR')
-                                         , ('metric_sums', 'unit_key', 'EUR')))
+
