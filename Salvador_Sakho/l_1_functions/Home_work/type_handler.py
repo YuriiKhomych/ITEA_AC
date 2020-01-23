@@ -1,4 +1,3 @@
-
 def check_if_dict(data):
     return isinstance(data, dict)
 
@@ -25,5 +24,3 @@ def check_if_float(data):
 
 def check_if_none(data):
     return data is None
-
-

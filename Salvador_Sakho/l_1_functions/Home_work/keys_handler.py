@@ -6,9 +6,9 @@ global_data.init()
 
 
 def check_key(collection, key, action):
-    if ((key in global_data.keys_for_remove[1:7]) \
-            or (key in [global_data.keys_for_remove[7][1], global_data.keys_for_remove[8][1]] and collection[key] != 'EUR')) \
-            and action == 'remove_key':
+    if ((key in global_data.keys_for_remove[1:7])
+        or (key in [global_data.keys_for_remove[7][1], global_data.keys_for_remove[8][1]]
+            and collection[key] != 'EUR')) and action == 'remove_key':
         remove_by_key(collection, key)
     if key in [global_data.keys_for_remove[7][0], global_data.keys_for_remove[8][0]] and action == 'remove_key':
         if type_handler.check_if_dict(collection[key]):
