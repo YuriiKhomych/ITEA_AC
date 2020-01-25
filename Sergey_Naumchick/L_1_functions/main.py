@@ -11,11 +11,11 @@ import task_9_operations
 """ 1. Remove unused keys from insight like:"""
 # A:
 
-# print(task_1_operations.remove_unused_keys(insights), )
+# print(task_1_operations.remove_unused_keys(insights))
 
 # B:
 
-# print(task_1_operations.rem_ent_aff(insights))
+print(task_1_operations.entities_lvl_remova(insights))
 
 """ 2. Remove keys which not fit the condition:"""
 
@@ -41,5 +41,4 @@ import task_9_operations
 
 """ 9. If "report_name" equal "device" make this value uppercase:"""
 
-print(task_9_operations.get_all_insig_metr_sum(insights))
-
+# print(task_9_operations.get_all_insig_metr_sum(insights))

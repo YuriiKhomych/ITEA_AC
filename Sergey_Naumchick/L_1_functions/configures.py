@@ -3,12 +3,10 @@
 """ 1. Remove unused keys from insight like:"""
 # A: On root level remove:
 
-keys_to_rem_root_lvl = ["period", "count", "total_count", "page_id"]
-list_deleted_1_a = []
+KEYS_TO_REM_ROOT_LVL = ("period", "count", "total_count", "page_id")
 
 # B: On entities_affected -> entities level remove:
-key_to_rem_ent_affec = ["link", "status", "days_in_data"]
-list_deleted_1_b = []
+KEY_TO_REM_ENT_AFFEC = ("link", "status", "days_in_data")
 
 """ 2. Remove keys which not fit the condition:"""
 # A: Remove each element from "table_columns" where "unit" not equal to "EUR"
