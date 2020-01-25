@@ -9,5 +9,6 @@ def to_set(*data):
 
 
 def objective_case_handler(list_comp):
-    list_handler.handle_list_data(list_comp, main_dict=global_data.main_dict, action='to_dict')
+    list_handler.handle_list_data(list_comp, main_dict=global_data.main_dict,
+                                  action='to_dict')
     return set(global_data.main_dict['objective'])
