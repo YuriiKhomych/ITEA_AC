@@ -73,9 +73,9 @@ insights = [
         "dtype": "list",
         "value": [
             [
-                {"ad_id": "6157230050572", "dimension_name": "Ad - 30",},
-                {"ad_id": "6156724309972", "dimension_name": "Ad - 19",},
-                {"ad_id": "6156724321572", "dimension_name": "Ad - 30",},
+                {"ad_id": "6157230050572", "dimension_name": "Ad - 30", },
+                {"ad_id": "6156724309972", "dimension_name": "Ad - 19", },
+                {"ad_id": "6156724321572", "dimension_name": "Ad - 30", },
             ],
             [
                 {
@@ -98,12 +98,12 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230064972", "dimension_name": "Ad - 37",},
-                {"ad_id": "6156724342372", "dimension_name": "Ad - 37",},
+                {"ad_id": "6157230064972", "dimension_name": "Ad - 37", },
+                {"ad_id": "6156724342372", "dimension_name": "Ad - 37", },
             ],
             [
-                {"ad_id": "6157230144572", "dimension_name": "Ad - 20",},
-                {"ad_id": "6146102376172", "dimension_name": "Ad - 20",},
+                {"ad_id": "6157230144572", "dimension_name": "Ad - 20", },
+                {"ad_id": "6146102376172", "dimension_name": "Ad - 20", },
             ],
             [
                 {
@@ -116,29 +116,29 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230052572", "dimension_name": "Facial",},
-                {"ad_id": "6150127763172", "dimension_name": "Facial",},
+                {"ad_id": "6157230052572", "dimension_name": "Facial", },
+                {"ad_id": "6150127763172", "dimension_name": "Facial", },
             ],
             [
-                {"ad_id": "6157230052372", "dimension_name": "Ad - 36",},
-                {"ad_id": "6156724338772", "dimension_name": "Ad - 36",},
+                {"ad_id": "6157230052372", "dimension_name": "Ad - 36", },
+                {"ad_id": "6156724338772", "dimension_name": "Ad - 36", },
             ],
             [
-                {"ad_id": "6157230142772", "dimension_name": "Beurer",},
-                {"ad_id": "6146102375372", "dimension_name": "Beurer",},
+                {"ad_id": "6157230142772", "dimension_name": "Beurer", },
+                {"ad_id": "6146102375372", "dimension_name": "Beurer", },
             ],
             [
-                {"ad_id": "6157230065372", "dimension_name": "Ad - 33",},
-                {"ad_id": "6157230126172", "dimension_name": "Ad - 22",},
-                {"ad_id": "6156724307172", "dimension_name": "Ad - 22",},
-                {"ad_id": "6156724329172", "dimension_name": "Ad - 33",},
+                {"ad_id": "6157230065372", "dimension_name": "Ad - 33", },
+                {"ad_id": "6157230126172", "dimension_name": "Ad - 22", },
+                {"ad_id": "6156724307172", "dimension_name": "Ad - 22", },
+                {"ad_id": "6156724329172", "dimension_name": "Ad - 33", },
             ],
             [
-                {"ad_id": "6157230065172", "dimension_name": "Ad - 35",},
-                {"ad_id": "6156724328972", "dimension_name": "Ad - 35",},
+                {"ad_id": "6157230065172", "dimension_name": "Ad - 35", },
+                {"ad_id": "6156724328972", "dimension_name": "Ad - 35", },
             ],
             [
-                {"ad_id": "6157230050772", "dimension_name": "Macbook",},
+                {"ad_id": "6157230050772", "dimension_name": "Macbook", },
                 {
                     "ad_id": "6157230118172",
                     "dimension_name": "Macbook - Copy",
@@ -147,15 +147,15 @@ insights = [
                     "ad_id": "6150128327172",
                     "dimension_name": "Macbook - Copy",
                 },
-                {"ad_id": "6150127763572", "dimension_name": "Macbook",},
+                {"ad_id": "6150127763572", "dimension_name": "Macbook", },
             ],
             [
-                {"ad_id": "6157230078772", "dimension_name": "Ad - 47",},
-                {"ad_id": "6156724361172", "dimension_name": "Ad - 47",},
+                {"ad_id": "6157230078772", "dimension_name": "Ad - 47", },
+                {"ad_id": "6156724361172", "dimension_name": "Ad - 47", },
             ],
             [
-                {"ad_id": "6157230076372", "dimension_name": "Ad - 31",},
-                {"ad_id": "6156724331372", "dimension_name": "Ad - 31",},
+                {"ad_id": "6157230076372", "dimension_name": "Ad - 31", },
+                {"ad_id": "6156724331372", "dimension_name": "Ad - 31", },
             ],
             [
                 {
@@ -168,37 +168,37 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230076572", "dimension_name": "Ad - 38",},
-                {"ad_id": "6156724339572", "dimension_name": "Ad - 38",},
+                {"ad_id": "6157230076572", "dimension_name": "Ad - 38", },
+                {"ad_id": "6156724339572", "dimension_name": "Ad - 38", },
             ],
             [
-                {"ad_id": "6157230038772", "dimension_name": "Ad - 19",},
-                {"ad_id": "6157230100972", "dimension_name": "Ad - 13",},
-                {"ad_id": "6146102117972", "dimension_name": "Ad - 13",},
-                {"ad_id": "6146102402972", "dimension_name": "Ad - 19",},
+                {"ad_id": "6157230038772", "dimension_name": "Ad - 19", },
+                {"ad_id": "6157230100972", "dimension_name": "Ad - 13", },
+                {"ad_id": "6146102117972", "dimension_name": "Ad - 13", },
+                {"ad_id": "6146102402972", "dimension_name": "Ad - 19", },
             ],
             [
-                {"ad_id": "6157230132172", "dimension_name": "Ad - 24",},
-                {"ad_id": "6146102377972", "dimension_name": "Ad - 24",},
+                {"ad_id": "6157230132172", "dimension_name": "Ad - 24", },
+                {"ad_id": "6146102377972", "dimension_name": "Ad - 24", },
             ],
             [
-                {"ad_id": "6157230051572", "dimension_name": "Ad - 39",},
-                {"ad_id": "6156724342172", "dimension_name": "Ad - 39",},
+                {"ad_id": "6157230051572", "dimension_name": "Ad - 39", },
+                {"ad_id": "6156724342172", "dimension_name": "Ad - 39", },
             ],
             [
-                {"ad_id": "6157230040172", "dimension_name": "Ad - 18",},
-                {"ad_id": "6146102413972", "dimension_name": "Ad - 18",},
+                {"ad_id": "6157230040172", "dimension_name": "Ad - 18", },
+                {"ad_id": "6146102413972", "dimension_name": "Ad - 18", },
             ],
             [
-                {"ad_id": "6157230038572", "dimension_name": "Kiko",},
-                {"ad_id": "6146102412172", "dimension_name": "Kiko",},
+                {"ad_id": "6157230038572", "dimension_name": "Kiko", },
+                {"ad_id": "6146102412172", "dimension_name": "Kiko", },
             ],
             [
-                {"ad_id": "6157230092372", "dimension_name": "Ad - 44",},
-                {"ad_id": "6156724348572", "dimension_name": "Ad - 44",},
+                {"ad_id": "6157230092372", "dimension_name": "Ad - 44", },
+                {"ad_id": "6156724348572", "dimension_name": "Ad - 44", },
             ],
             [
-                {"ad_id": "6157230040572", "dimension_name": "Ad - 20",},
+                {"ad_id": "6157230040572", "dimension_name": "Ad - 20", },
                 {
                     "ad_id": "6157230110372",
                     "dimension_name": "Test - Image 1",
@@ -207,7 +207,7 @@ insights = [
                     "ad_id": "6146102046172",
                     "dimension_name": "Test - Image 1",
                 },
-                {"ad_id": "6146102401772", "dimension_name": "Ad - 20",},
+                {"ad_id": "6146102401772", "dimension_name": "Ad - 20", },
             ],
             [
                 {
@@ -220,50 +220,50 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230063972", "dimension_name": "Ad - 32",},
-                {"ad_id": "6157230126972", "dimension_name": "Ad - 21",},
-                {"ad_id": "6156724306972", "dimension_name": "Ad - 21",},
-                {"ad_id": "6156724326972", "dimension_name": "Ad - 32",},
+                {"ad_id": "6157230063972", "dimension_name": "Ad - 32", },
+                {"ad_id": "6157230126972", "dimension_name": "Ad - 21", },
+                {"ad_id": "6156724306972", "dimension_name": "Ad - 21", },
+                {"ad_id": "6156724326972", "dimension_name": "Ad - 32", },
             ],
             [
-                {"ad_id": "6157230075572", "dimension_name": "Ad - 42",},
-                {"ad_id": "6156724352972", "dimension_name": "Ad - 42",},
+                {"ad_id": "6157230075572", "dimension_name": "Ad - 42", },
+                {"ad_id": "6156724352972", "dimension_name": "Ad - 42", },
             ],
             [
-                {"ad_id": "6157230088772", "dimension_name": "Ad - 43",},
-                {"ad_id": "6157230115772", "dimension_name": "Ad - 32",},
-                {"ad_id": "6156724321372", "dimension_name": "Ad - 32",},
-                {"ad_id": "6156724348772", "dimension_name": "Ad - 43",},
+                {"ad_id": "6157230088772", "dimension_name": "Ad - 43", },
+                {"ad_id": "6157230115772", "dimension_name": "Ad - 32", },
+                {"ad_id": "6156724321372", "dimension_name": "Ad - 32", },
+                {"ad_id": "6156724348772", "dimension_name": "Ad - 43", },
             ],
             [
-                {"ad_id": "6157230076772", "dimension_name": "Ad - 34",},
-                {"ad_id": "6156724310172", "dimension_name": "Ad - 23",},
-                {"ad_id": "6156724326772", "dimension_name": "Ad - 34",},
+                {"ad_id": "6157230076772", "dimension_name": "Ad - 34", },
+                {"ad_id": "6156724310172", "dimension_name": "Ad - 23", },
+                {"ad_id": "6156724326772", "dimension_name": "Ad - 34", },
             ],
             [
-                {"ad_id": "6157230040772", "dimension_name": "Ad - 22",},
-                {"ad_id": "6146102032572", "dimension_name": "Ad - 22",},
+                {"ad_id": "6157230040772", "dimension_name": "Ad - 22", },
+                {"ad_id": "6146102032572", "dimension_name": "Ad - 22", },
             ],
             [
-                {"ad_id": "6157230090372", "dimension_name": "Ad - 41",},
-                {"ad_id": "6156724351372", "dimension_name": "Ad - 41",},
+                {"ad_id": "6157230090372", "dimension_name": "Ad - 41", },
+                {"ad_id": "6156724351372", "dimension_name": "Ad - 41", },
             ],
             [
-                {"ad_id": "6157230089572", "dimension_name": "Ad - 40",},
-                {"ad_id": "6156724338572", "dimension_name": "Ad - 40",},
+                {"ad_id": "6157230089572", "dimension_name": "Ad - 40", },
+                {"ad_id": "6156724338572", "dimension_name": "Ad - 40", },
             ],
             [
-                {"ad_id": "6157230064172", "dimension_name": "Ad - 29",},
-                {"ad_id": "6156724312172", "dimension_name": "Ad - 18",},
-                {"ad_id": "6156724317572", "dimension_name": "Ad - 29",},
+                {"ad_id": "6157230064172", "dimension_name": "Ad - 29", },
+                {"ad_id": "6156724312172", "dimension_name": "Ad - 18", },
+                {"ad_id": "6156724317572", "dimension_name": "Ad - 29", },
             ],
             [
-                {"ad_id": "6157230111172", "dimension_name": "Earphones",},
-                {"ad_id": "6146102073172", "dimension_name": "Earphones",},
+                {"ad_id": "6157230111172", "dimension_name": "Earphones", },
+                {"ad_id": "6146102073172", "dimension_name": "Earphones", },
             ],
             [
-                {"ad_id": "6157230105772", "dimension_name": "Stereo",},
-                {"ad_id": "6146102072972", "dimension_name": "Stereo",},
+                {"ad_id": "6157230105772", "dimension_name": "Stereo", },
+                {"ad_id": "6146102072972", "dimension_name": "Stereo", },
             ],
             [
                 {
@@ -296,12 +296,12 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230105972", "dimension_name": "PS4",},
-                {"ad_id": "6146102113772", "dimension_name": "PS4",},
+                {"ad_id": "6157230105972", "dimension_name": "PS4", },
+                {"ad_id": "6146102113772", "dimension_name": "PS4", },
             ],
             [
-                {"ad_id": "6157230125372", "dimension_name": "Ad - 34",},
-                {"ad_id": "6156724318972", "dimension_name": "Ad - 34",},
+                {"ad_id": "6157230125372", "dimension_name": "Ad - 34", },
+                {"ad_id": "6156724318972", "dimension_name": "Ad - 34", },
             ],
             [
                 {
@@ -314,8 +314,8 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230115972", "dimension_name": "Speaker",},
-                {"ad_id": "6150128513572", "dimension_name": "Speaker",},
+                {"ad_id": "6157230115972", "dimension_name": "Speaker", },
+                {"ad_id": "6150128513572", "dimension_name": "Speaker", },
             ],
             [
                 {
@@ -328,64 +328,64 @@ insights = [
                 },
             ],
             [
-                {"ad_id": "6157230104172", "dimension_name": "Ad - 13",},
-                {"ad_id": "6146102072772", "dimension_name": "Ad - 13",},
-                {"ad_id": "6146102339972", "dimension_name": "Ad - 18",},
+                {"ad_id": "6157230104172", "dimension_name": "Ad - 13", },
+                {"ad_id": "6146102072772", "dimension_name": "Ad - 13", },
+                {"ad_id": "6146102339972", "dimension_name": "Ad - 18", },
             ],
             [
-                {"ad_id": "6156696455372", "dimension_name": "Ad - 5",},
-                {"ad_id": "6156696427772", "dimension_name": "Ad - 5",},
+                {"ad_id": "6156696455372", "dimension_name": "Ad - 5", },
+                {"ad_id": "6156696427772", "dimension_name": "Ad - 5", },
             ],
             [
-                {"ad_id": "6156696462572", "dimension_name": "Ad - 15",},
-                {"ad_id": "6156696435572", "dimension_name": "Ad - 15",},
+                {"ad_id": "6156696462572", "dimension_name": "Ad - 15", },
+                {"ad_id": "6156696435572", "dimension_name": "Ad - 15", },
             ],
             [
-                {"ad_id": "6156696461972", "dimension_name": "Ad - 20",},
-                {"ad_id": "6156696449172", "dimension_name": "Ad - 20",},
+                {"ad_id": "6156696461972", "dimension_name": "Ad - 20", },
+                {"ad_id": "6156696449172", "dimension_name": "Ad - 20", },
             ],
             [
-                {"ad_id": "6156696465372", "dimension_name": "Ad - 18",},
-                {"ad_id": "6156696452572", "dimension_name": "Ad - 18",},
+                {"ad_id": "6156696465372", "dimension_name": "Ad - 18", },
+                {"ad_id": "6156696452572", "dimension_name": "Ad - 18", },
             ],
             [
-                {"ad_id": "6156696462172", "dimension_name": "Ad - 12",},
-                {"ad_id": "6156696440172", "dimension_name": "Ad - 12",},
+                {"ad_id": "6156696462172", "dimension_name": "Ad - 12", },
+                {"ad_id": "6156696440172", "dimension_name": "Ad - 12", },
             ],
             [
-                {"ad_id": "6156696459972", "dimension_name": "Ad - 8",},
-                {"ad_id": "6156696426172", "dimension_name": "Ad - 8",},
+                {"ad_id": "6156696459972", "dimension_name": "Ad - 8", },
+                {"ad_id": "6156696426172", "dimension_name": "Ad - 8", },
             ],
             [
-                {"ad_id": "6156696456972", "dimension_name": "Ad - 9",},
-                {"ad_id": "6156696426972", "dimension_name": "Ad - 9",},
+                {"ad_id": "6156696456972", "dimension_name": "Ad - 9", },
+                {"ad_id": "6156696426972", "dimension_name": "Ad - 9", },
             ],
             [
-                {"ad_id": "6155106759772", "dimension_name": "Hombres DCO",},
-                {"ad_id": "6155106756572", "dimension_name": "Mujeres DCO",},
-                {"ad_id": "6154050041972", "dimension_name": "Ad - 1",},
-                {"ad_id": "6154049060572", "dimension_name": "Ad - 2",},
-                {"ad_id": "6154049101372", "dimension_name": "Ad - 1",},
-                {"ad_id": "6152590296772", "dimension_name": "Mujeres DCO",},
-                {"ad_id": "6145275317372", "dimension_name": "Hombres DCO",},
+                {"ad_id": "6155106759772", "dimension_name": "Hombres DCO", },
+                {"ad_id": "6155106756572", "dimension_name": "Mujeres DCO", },
+                {"ad_id": "6154050041972", "dimension_name": "Ad - 1", },
+                {"ad_id": "6154049060572", "dimension_name": "Ad - 2", },
+                {"ad_id": "6154049101372", "dimension_name": "Ad - 1", },
+                {"ad_id": "6152590296772", "dimension_name": "Mujeres DCO", },
+                {"ad_id": "6145275317372", "dimension_name": "Hombres DCO", },
             ],
             [
-                {"ad_id": "6148089324772", "dimension_name": "Ad - 0 - Copy",},
-                {"ad_id": "6145534054172", "dimension_name": "MX-Enero",},
-                {"ad_id": "6145534054372", "dimension_name": "MX-Enero",},
-                {"ad_id": "6145532617972", "dimension_name": "Mujeres DCO",},
-                {"ad_id": "6145532618772", "dimension_name": "Hombres DCO",},
-                {"ad_id": "6145267956772", "dimension_name": "DCO MUJERES",},
-                {"ad_id": "6145267959772", "dimension_name": "DCO HOMBRES",},
+                {"ad_id": "6148089324772", "dimension_name": "Ad - 0 - Copy", },
+                {"ad_id": "6145534054172", "dimension_name": "MX-Enero", },
+                {"ad_id": "6145534054372", "dimension_name": "MX-Enero", },
+                {"ad_id": "6145532617972", "dimension_name": "Mujeres DCO", },
+                {"ad_id": "6145532618772", "dimension_name": "Hombres DCO", },
+                {"ad_id": "6145267956772", "dimension_name": "DCO MUJERES", },
+                {"ad_id": "6145267959772", "dimension_name": "DCO HOMBRES", },
                 {
                     "ad_id": "6145267965572",
                     "dimension_name": "DCO VIDEO JUEGOS",
                 },
-                {"ad_id": "6145264648772", "dimension_name": "MX-Enero",},
-                {"ad_id": "6145264646172", "dimension_name": "MX-Enero",},
-                {"ad_id": "6145258913772", "dimension_name": "Ad - 0",},
-                {"ad_id": "6145255007172", "dimension_name": "AR Male DCO",},
-                {"ad_id": "6145255007572", "dimension_name": "Ad - 2",},
+                {"ad_id": "6145264648772", "dimension_name": "MX-Enero", },
+                {"ad_id": "6145264646172", "dimension_name": "MX-Enero", },
+                {"ad_id": "6145258913772", "dimension_name": "Ad - 0", },
+                {"ad_id": "6145255007172", "dimension_name": "AR Male DCO", },
+                {"ad_id": "6145255007572", "dimension_name": "Ad - 2", },
             ],
         ],
         "dimension": "ad_id",
@@ -400,8 +400,8 @@ insights = [
         "dtype": "list",
         "value": [
             [
-                {"adset_id": "6157230030372", "dimension_name": "Mujeres",},
-                {"adset_id": "6146101998972", "dimension_name": "Mujeres",},
+                {"adset_id": "6157230030372", "dimension_name": "Mujeres", },
+                {"adset_id": "6146101998972", "dimension_name": "Mujeres", },
             ],
             [
                 {
@@ -414,20 +414,20 @@ insights = [
                 },
             ],
             [
-                {"adset_id": "6155106724772", "dimension_name": "Hombres",},
-                {"adset_id": "6145275245372", "dimension_name": "Hombres",},
+                {"adset_id": "6155106724772", "dimension_name": "Hombres", },
+                {"adset_id": "6145275245372", "dimension_name": "Hombres", },
             ],
             [
-                {"adset_id": "6155106724572", "dimension_name": "Mujeres",},
-                {"adset_id": "6152590296972", "dimension_name": "Mujeres",},
+                {"adset_id": "6155106724572", "dimension_name": "Mujeres", },
+                {"adset_id": "6152590296972", "dimension_name": "Mujeres", },
             ],
             [
-                {"adset_id": "6145534054772", "dimension_name": "Mujeres",},
-                {"adset_id": "6145264569772", "dimension_name": "Mujeres",},
+                {"adset_id": "6145534054772", "dimension_name": "Mujeres", },
+                {"adset_id": "6145264569772", "dimension_name": "Mujeres", },
             ],
             [
-                {"adset_id": "6145534053972", "dimension_name": "Hombres",},
-                {"adset_id": "6145264570972", "dimension_name": "Hombres",},
+                {"adset_id": "6145534053972", "dimension_name": "Hombres", },
+                {"adset_id": "6145264570972", "dimension_name": "Hombres", },
             ],
         ],
         "dimension": "adset_id",
@@ -1633,6 +1633,7 @@ insights = [
                 "profit": 0.0,
                 "frontend_metric_name_key": "spend",
                 "unit_key": "EUR",
+                "summary":22.5,
             },
             {
                 "metric_name": "impressions",

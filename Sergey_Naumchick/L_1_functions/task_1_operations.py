@@ -1,7 +1,7 @@
 import configures
 
 
-# Task #1 (A)
+# # Task #1 (A)
 
 # def remove_unused_keys(insights):
 #     if type(insights) == dict:
@@ -20,8 +20,7 @@ import configures
 # # Task #1 (B)
 
 def entities_lvl_remova(insights):
-    n = 0
-    if type(insights) == dict:
+    if isinstance(insights, dict):
         insights_copy = insights.copy()
         for key, value in insights_copy.items():
             if key == "entities_affected":
@@ -35,12 +34,15 @@ def entities_lvl_remova(insights):
 
 
 def find_in_ent_eff(insights):
-    if type(insights) == dict:
-        for key, value in insights.items():
+    if isinstance(insights, dict):
+        insights_copy = insights.copy()
+        for key, value in insights_copy.items():
             if key in configures.KEY_TO_REM_ENT_AFFEC:
                 del insights[key]
+            else:
+                find_in_ent_eff(value)
 
-    elif type(insights) == list:
+    elif isinstance(insights, list):
         for dicts in insights:
             find_in_ent_eff(dicts)
     return insights

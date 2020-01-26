@@ -16,6 +16,7 @@ def search_in_dict(dicta):
 
 def search_in_m_sums(d_key):
     if type(d_key) == dict:
+
         for key, value in d_key.items():
             if key == "metric_name":
                 configures.list_metric_names.append(value)
@@ -34,6 +35,7 @@ def search_in_m_sums(d_key):
 def get_all_insig_metr_sum(list_dicts):
     search_in_dict(list_dicts)
     for i in range(len(configures.list_metric_names)):
-        configures.list_metric_answer.append(f"Metric name - {(configures.list_metric_names[i]).upper()} the sum is - {configures.list_metric_sum[i] + configures.list_metric_sum_level[i] + configures.list_metric_general[i]}")
+        configures.list_metric_answer.append(
+            f"Metric name - {(configures.list_metric_names[i]).upper()} the sum is - {configures.list_metric_sum[i] + configures.list_metric_sum_level[i] + configures.list_metric_general[i]}")
 
     return configures.list_metric_answer

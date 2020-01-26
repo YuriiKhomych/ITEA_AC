@@ -1,20 +1,15 @@
 import configures
 
 
-def search_in_dict(dicta):
-    if type(dicta) == dict:
-        for key, value in dicta.items():
-            if key == configures.get_values_of_key:
+def search_in_dict(insights):
+    if isinstance(insights, dict):
+        for key, value in insights.items():
+            if key == configures.GET_VALUES_OF_KEY:
                 configures.list_values_of_key.append(value)
             else:
                 search_in_dict(value)
-    elif type(dicta) == list:
-
-        for dicts in dicta:
+    elif isinstance(insights, list):
+        for dicts in insights:
             search_in_dict(dicts)
-
-
-def rem_keys_not_cond(list_dicts):
-    search_in_dict(list_dicts)
 
     return configures.list_values_of_key
