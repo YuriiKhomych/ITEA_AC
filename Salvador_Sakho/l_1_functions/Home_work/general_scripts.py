@@ -151,3 +151,53 @@ class MainApplicationLogicClass:
             if data == '(not set)':
                 self.main_dict['page_id'][idx] = None
         return self.main_dict
+
+    def _sort_by_keys_insights_list(self, list_comp):
+        self._handle_list_data(list_comp, main_dict=self.main_dict,
+                               action='to_dict')
+        # "type", "api", "report_name" and "objective"
+        new_dict = {'type': self.main_dict['type'],
+                    'api': self.main_dict['api'],
+                    'report_name': self.main_dict['report_name'],
+                    'objective': self.main_dict['objective']}
+
+        for key, val in self.main_dict.items():
+            if key not in ["type", "api", "report_name", "objective"]:
+                new_dict[key] = self.main_dict[key]
+        self.main_dict = new_dict
+        return self.main_dict
+
+    def _calculate_summary_case_handler(self, list_comp):
+        for collection in list_comp:
+            if 'api' in collection.keys():
+                if collection['api'] == 1:
+                    period = collection['period']
+                    for data in collection['metric_sums']:
+                        if data['sum_general'] != 0:
+                            print(data['sum'] * data['sum_level']
+                                  / data['sum_general']
+                                  / 7 if period is None or period > 4
+                                  else period)
+                elif collection['api'] == 2:
+                    period = collection['period']
+                    for data in collection['metric_sums']:
+                        if data['sum_general'] != 0:
+                            print(data['sum'] * data['sum_level'] ** 2
+                                  / data['sum_general']
+                                  / 7 if period is None or period > 4
+                                  else period)
+                elif collection['api'] == 3:
+                    period = collection['period']
+                    for data in collection['metric_sums']:
+                        if data['sum_general'] != 0:
+                            print(data['sum'] * data['sum_general']
+                                  / 7 if period is None or period > 4
+                                  else period)
+                elif collection['api'] == 4:
+                    period = collection['period']
+                    for data in collection['metric_sums']:
+                        if data['sum_general'] != 0:
+                            print(data['sum'] * data['sum_general']
+                                  / 100
+                                  / 7 if period is None or period > 4
+                                  else period)
