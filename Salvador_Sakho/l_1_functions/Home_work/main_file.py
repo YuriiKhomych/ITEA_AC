@@ -1,8 +1,6 @@
 import Salvador_Sakho.l_1_functions.Home_work.action_handler as action_handler
 from Salvador_Sakho.l_1_functions.hw_start import insights
 
-# todo: 10
-
 if __name__ == '__main__':
     # remove_key
     # entities_to_list -> check entities_spend_sum ???
