@@ -1,6 +1,7 @@
 from hw_start import insights
 import BaseInsight
 
+
 for insight in insights:
 
     try:
