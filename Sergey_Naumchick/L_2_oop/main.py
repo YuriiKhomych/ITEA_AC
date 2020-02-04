@@ -3,6 +3,7 @@ import BaseInsight
 
 for insight in insights:
 
+
     try:
         bi = BaseInsight.BaseInsight(**insight)
 
