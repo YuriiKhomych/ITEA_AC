@@ -3,7 +3,6 @@ from metricSummary import MetricSummary
 
 class BaseInsight:
 
-
     def __init__(self,
                  metric_name=None,
                  api=None,
