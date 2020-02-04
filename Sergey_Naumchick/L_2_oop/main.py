@@ -5,7 +5,11 @@ for insight in insights:
 
     try:
         bi = BaseInsight.BaseInsight(**insight)
-    except Exception as err:
+
+    except KeyError as err:
+
         print(f"Error: {err}")
+
     else:
         print(bi.__dict__)
+

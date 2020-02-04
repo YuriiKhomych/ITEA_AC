@@ -4,15 +4,15 @@ from metricSummary import MetricSummary
 class BaseInsight:
 
     def __init__(self,
-                 metric_name,
-                 api,
-                 report_name,
-                 objective,
-                 unit,
-                 currency,
-                 id,
-                 validator_insight_type,
-                 metric_summary,
+                 metric_name=None,
+                 api=None,
+                 report_name=None,
+                 objective=None,
+                 unit=None,
+                 currency=None,
+                 id=None,
+                 validator_insight_type=None,
+                 metric_summary=None,
                  **kwargs,
                  ):
         self.if_api(api)
@@ -24,31 +24,20 @@ class BaseInsight:
         self.currency = currency
         self.id = id
         self.validator_insight_type = validator_insight_type
-        # self.metrics = self.metr_s(metric_summary)
-        # self.metr_s()
+        self.metrics = self.metr_s(metric_summary)
+
+    def __eq__(self, other):
+        if self.api == other.api:
+            print("eq")
 
     @staticmethod
     def if_api(api):
-        if api not in range(1, 4):
+        if api not in range(1, 5):
             raise KeyError("bad - api not in 1..4")
 
-    # @staticmethod
-    # def metr_s(metrics) -> dict:
-    #     """
-    #     Filter the values in metrics dict and replace it on MetricSummary instances
-    #     :param metrics: List of dict where each element is some metric
-    #     :type metrics: list
-    #     :return: Dict of MetricSummary instances
-    #     :rtype: dict
-    #     """
-    #
-    #     if not isinstance(metrics, dict):
-    #         return {}
-    #
-    #     metric_attributes = [attr for attr in dir(MetricSummary()) if not attr.startswith("__")
-    #                          and not attr.endswith("__") and not attr.startswith("_")]
-    #
-    #     for key, params in metrics.items():
-    #         metrics[key] = MetricSummary(**dict(filter(lambda param: param[0] in metric_attributes, params.items())))
-    #
-    #     return metrics
+    @staticmethod
+    def metr_s(metrics):
+        my_dict = {}
+        for key, value in metrics.items():
+            my_dict[key] = MetricSummary(**value)
+        return my_dict
