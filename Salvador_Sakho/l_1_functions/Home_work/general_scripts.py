@@ -14,7 +14,6 @@ class MainApplicationLogicClass:
             'period', 'count', 'total_count', 'page_id', 'link', 'status'
             , 'days_in_data', ('table_columns', 'unit', 'EUR')
             , ('metric_sums', 'unit_key', 'EUR'))
-        self.summary_calcualtion_list_results = []
 
     def _handle_list_data(self, list_data, key=None, action=None,
                           **collection):
