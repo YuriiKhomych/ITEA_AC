@@ -14,6 +14,7 @@ class MainApplicationLogicClass:
             'period', 'count', 'total_count', 'page_id', 'link', 'status'
             , 'days_in_data', ('table_columns', 'unit', 'EUR')
             , ('metric_sums', 'unit_key', 'EUR'))
+        self.summary_calcualtion_list_results = []
 
     def _handle_list_data(self, list_data, key=None, action=None,
                           **collection):
@@ -168,36 +169,22 @@ class MainApplicationLogicClass:
         return self.main_dict
 
     def _calculate_summary_case_handler(self, list_comp):
+        results = []
         for collection in list_comp:
             if 'api' in collection.keys():
-                if collection['api'] == 1:
-                    period = collection['period']
-                    for data in collection['metric_sums']:
-                        if data['sum_general'] != 0:
-                            print(data['sum'] * data['sum_level']
-                                  / data['sum_general']
-                                  / 7 if period is None or period > 4
-                                  else period)
-                elif collection['api'] == 2:
-                    period = collection['period']
-                    for data in collection['metric_sums']:
-                        if data['sum_general'] != 0:
-                            print(data['sum'] * data['sum_level'] ** 2
-                                  / data['sum_general']
-                                  / 7 if period is None or period > 4
-                                  else period)
-                elif collection['api'] == 3:
-                    period = collection['period']
-                    for data in collection['metric_sums']:
-                        if data['sum_general'] != 0:
-                            print(data['sum'] * data['sum_general']
-                                  / 7 if period is None or period > 4
-                                  else period)
-                elif collection['api'] == 4:
-                    period = collection['period']
-                    for data in collection['metric_sums']:
-                        if data['sum_general'] != 0:
-                            print(data['sum'] * data['sum_general']
-                                  / 100
-                                  / 7 if period is None or period > 4
-                                  else period)
+                period = collection['period']
+                for data in collection['metric_sums']:
+                    results.append({
+                        1: data['sum'] * data['sum_level'] / 1
+                        if data['sum_general'] == 0 else data['sum_general']
+                        / 7 if period is None or period > 4 else period,
+                        2: data['sum'] * data['sum_level'] ** 2 / 1
+                        if data['sum_general'] == 0 else data['sum_general']
+                        / 7 if period is None or period > 4 else period,
+                        3: data['sum_level'] / 1 if data['sum_general'] == 0
+                        else data['sum_general'] / 7 if period is None
+                        or period > 4 else period,
+                        4: data['sum_level'] * data['sum_general'] / 100 / 7
+                        if period is None or period > 4 else period
+                    }[collection['api']])
+        return results

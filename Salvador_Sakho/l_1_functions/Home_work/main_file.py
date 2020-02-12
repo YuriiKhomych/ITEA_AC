@@ -16,6 +16,5 @@ if __name__ == '__main__':
     # calculate_summary_case -> will print result
 
     ah = action_handler.HandleAction()
-    ah.run_process([line for line in insights],
-                   action='calculate_summary_case')
-    print(ah.main_dict)
+    print(ah.run_process([line for line in insights],
+                   action='calculate_summary_case'))

@@ -18,7 +18,7 @@ class HandleAction(MainApplicationLogicClass):
         elif action == 'sort_by_keys_case':
             self._sort_by_keys_insights_list(data)
         elif action == 'calculate_summary_case':
-            self._calculate_summary_case_handler(data)
+            return self._calculate_summary_case_handler(data)
         elif action in ['remove_key', 'entities_to_list', 'to_dict', 'to_list',
                         'to_set']:
             if isinstance(data, dict):
