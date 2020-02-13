@@ -173,17 +173,21 @@ class MainApplicationLogicClass:
             if 'api' in collection.keys():
                 period = collection['period']
                 for data in collection['metric_sums']:
-                    results.append({
-                        1: data['sum'] * data['sum_level'] / 1
-                        if data['sum_general'] == 0 else data['sum_general']
-                        / 7 if period is None or period > 4 else period,
-                        2: data['sum'] * data['sum_level'] ** 2 / 1
-                        if data['sum_general'] == 0 else data['sum_general']
-                        / 7 if period is None or period > 4 else period,
-                        3: data['sum_level'] / 1 if data['sum_general'] == 0
-                        else data['sum_general'] / 7 if period is None
-                        or period > 4 else period,
-                        4: data['sum_level'] * data['sum_general'] / 100 / 7
-                        if period is None or period > 4 else period
-                    }[collection['api']])
+                    functions_mapping = {
+                        1: data['sum'] * data['sum_level']
+                            / 1 if data['sum_general'] == 0
+                        else data['sum_general']
+                            / 7 if period is None or period > 4 else period,
+                        2: data['sum'] * data['sum_level'] ** 2
+                            / 1 if data['sum_general'] == 0
+                        else data['sum_general']
+                            / 7 if period is None or period > 4 else period,
+                        3: data['sum_level']
+                            / 1 if data['sum_general'] == 0
+                        else data['sum_general']
+                            / 7 if period is None or period > 4 else period,
+                        4: data['sum_level'] * data['sum_general'] / 100
+                            / 7 if period is None or period > 4 else period
+                    }[collection['api']]
+                    results.append(functions_mapping)
         return results
