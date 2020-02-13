@@ -174,20 +174,20 @@ class MainApplicationLogicClass:
                 period = collection['period']
                 for data in collection['metric_sums']:
                     functions_mapping = {
-                        1: data['sum'] * data['sum_level']
+                        1: lambda: data['sum'] * data['sum_level']
                             / 1 if data['sum_general'] == 0
                         else data['sum_general']
                             / 7 if period is None or period > 4 else period,
-                        2: data['sum'] * data['sum_level'] ** 2
+                        2: lambda: data['sum'] * data['sum_level'] ** 2
                             / 1 if data['sum_general'] == 0
                         else data['sum_general']
                             / 7 if period is None or period > 4 else period,
-                        3: data['sum_level']
+                        3: lambda: data['sum_level']
                             / 1 if data['sum_general'] == 0
                         else data['sum_general']
                             / 7 if period is None or period > 4 else period,
-                        4: data['sum_level'] * data['sum_general'] / 100
+                        4: lambda: data['sum_level'] * data['sum_general'] / 100
                             / 7 if period is None or period > 4 else period
-                    }[collection['api']]
+                    }[collection['api']]()
                     results.append(functions_mapping)
         return results
