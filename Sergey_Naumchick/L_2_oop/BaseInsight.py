@@ -34,6 +34,9 @@ class BaseInsight:
     def if_api(api):
         if api not in range(1, 5):
             raise KeyError("bad - api not in 1..4")
+        else:
+            import insight_class_attr
+            print(f'{insight_class_attr.adding_attr(api).__name__.upper()}', end=' ')
 
     @staticmethod
     def metr_s(metrics):

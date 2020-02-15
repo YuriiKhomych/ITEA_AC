@@ -1,5 +1,6 @@
 from hw_start import insights
 import BaseInsight
+from Test import insight_builder
 
 for insight in insights:
 
@@ -13,3 +14,8 @@ for insight in insights:
     else:
         print(bi.__dict__)
 
+print()
+print("NOW COPY:")
+print()
+
+insight_builder(insights)
