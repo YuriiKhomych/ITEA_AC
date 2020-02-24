@@ -30,6 +30,3 @@ class TwitterInsight(BaseInsight):
         self.first_date = first_date
         self.last_date = last_date
         super().__init__(**kwargs)
-
-
-

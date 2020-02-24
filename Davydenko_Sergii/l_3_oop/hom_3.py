@@ -1,5 +1,6 @@
 from hw_start import insights
 from BaseInsight import BaseInsight
+
 #
 #
 for insight in insights:

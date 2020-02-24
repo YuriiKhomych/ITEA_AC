@@ -9,11 +9,7 @@ for insight in insights:
         print(error)
 
     else:
-        # print(bi.sums_of_metrics)
-        # print(bi.method_report_name)
-        # print(bi.get_attribute_value)
+        print(bi.sums_of_metrics)
+        print(bi.method_report_name)
+        print(bi.get_attribute_value)
         print(bi.__dict__)
-
-
-
-

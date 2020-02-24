@@ -1,5 +1,6 @@
 from hw_start import insights
 from BaseInsight import BaseInsight
+
 # from MetricSummary import MetricSummary
 
 
@@ -13,8 +14,3 @@ for insight in insights:
         # print(bi.__dict__)
         print(f'The metric is {bi.metrics.metrics}')
         print(f'The len of metrics is {len(bi)}')
-
-
-
-
-

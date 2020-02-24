@@ -1,6 +1,3 @@
-from home_5 import time_laps
-
-
 class MetricSummary:
     def __init__(self, metric_summary):
         self.metric_summary = metric_summary
@@ -21,8 +18,8 @@ class MetricSummary:
                 if isinstance(val, (int, float)):
                     result_sum += val
             result.append(result_sum)
-            for i in result:
-                if i > 30:
-                    return sum(result)
+            # for i in result:
+            #     if i > 30:
+            #         return sum(result)
 
         return result

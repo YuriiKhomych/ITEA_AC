@@ -1,9 +1,8 @@
 from abc import abstractmethod, ABCMeta
-from meta_insight import MetaInsight
-# import BaseInsight
+# from meta_insight import MetaInsight
 
 
-class AbstractInsight(MetaInsight):
+class AbstractInsight(metaclass=ABCMeta):
 
     @abstractmethod
     def sums_of_metrics(self):

@@ -10,7 +10,6 @@ class MetaInsight(type):
         }.get(name, 30)
         return temp
 
-
     # def get_api_name(self, name):
     #     try:
     #         return self.get_api_name(name)

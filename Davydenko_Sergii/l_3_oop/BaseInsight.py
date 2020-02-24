@@ -1,6 +1,6 @@
 from meta_insight import MetaInsight
 from MetricSummary import MetricSummary
-from home_5 import time_laps
+# from home_5 import time_laps
 
 
 class BaseInsight(metaclass=MetaInsight):
@@ -28,19 +28,16 @@ class BaseInsight(metaclass=MetaInsight):
         self.metric_summary = metric_summary
         self.metrics = self.sums_of_metrics(metric_summary)
 
-
-
     @staticmethod
     # @time_laps
     def check_api(api):
         if api not in range(1, 5):
             raise KeyError(f"api {api} is out of range!")
 
-
     @staticmethod
     # @time_laps
-    def sums_of_metrics(metric):
-        return MetricSummary(metric)
+    def sums_of_metrics(metrics):
+        return MetricSummary(metrics)
 
     # @time_laps
     def __len__(self):
@@ -50,21 +47,18 @@ class BaseInsight(metaclass=MetaInsight):
     def method_report_name(self):
         return self.report_name.upper()
 
-
     # Get attribute value
-    @time_laps
+    # @time_laps
     def get_attribute_value(self, name):
         try:
             return getattr(self, name)
         except Exception as error:
             return error
 
-
     # Print attribute value
-    @time_laps
+    # @time_laps
     def get_attribute(self, name):
         print(self.get_attribute_value(name))
-
 
     @property
     def currency(self):
@@ -77,4 +71,3 @@ class BaseInsight(metaclass=MetaInsight):
     @property
     def print(self):
         return 'print'
-
