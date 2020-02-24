@@ -16,8 +16,5 @@ def time_laps(func=None):
                              f'{time_end} secs with result {result}\n')
 
         return result
+
     return wrap_func
-
-
-
-

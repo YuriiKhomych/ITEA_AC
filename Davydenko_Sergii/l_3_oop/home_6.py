@@ -1,6 +1,5 @@
 from context_manager_account import Account
 
-
 with Account('Itea', 100500) as transactions:
     transactions.add_transaction(50)
     transactions.add_transaction(20)
