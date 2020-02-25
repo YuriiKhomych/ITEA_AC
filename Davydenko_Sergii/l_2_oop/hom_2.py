@@ -20,6 +20,6 @@ for insight in insights:
     try:
         apisnik = aps(**insight)
     except ValueError as error:
-        pass
+        print(f'{error}')
     else:
         print(apisnik.__dict__)
