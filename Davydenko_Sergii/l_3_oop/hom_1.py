@@ -14,10 +14,10 @@ def ch_api(api):
 
 
 for insight in insights:
-    apishnik = insight['api'] if 'api' in insight is not None else None
+    apishnik = insight['api'] if 'api' in insight else None
     apishnik_for_class = ch_api(apishnik)
     tries = apishnik_for_class(**insight)
-    if apishnik != None:
+    if apishnik is not None:
         print(tries.__dict__)
     else:
         print(f'Sorry api is {apishnik}')
