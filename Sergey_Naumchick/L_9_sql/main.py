@@ -1,8 +1,8 @@
-import insert_data
+from insert_data import insert_data
 from update_table import updating_table
-from delete_data import  delete_data
+from delete_data import delete_data
 
-insert_data.insert_data(
+insert_data(
     'curs',
     'hhhasdsa',
     'Kiril',
@@ -19,5 +19,5 @@ updating_table(
     contact_name='Kiril',
 )
 
-    # deleting data
-delete_data('curs',contact_name='Kiril')
+# deleting data
+delete_data('curs', contact_name='Kiril')
