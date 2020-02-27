@@ -11,9 +11,4 @@ def updating_table(*args, **kwargs, ):
         with conn.cursor() as cursor:
             for key, value in kwargs.items():
                 for arg in args:
-                    cursor.execute(
-                        f"""
-                        update curs 
-                        set {key} = '{arg}' 
-                        WHERE {key} = '{value}'
-                        """)
+                    cursor.execute(f""" update curs set {key} = '{arg}' WHERE {key} = '{value}'""")
