@@ -13,7 +13,7 @@ def delete_data(table_name, **kwargs):
             for key, value in kwargs.items():
                 cursor.execute(
                     f"""
-                    DELETE from {table_name} 
+                    DELETE from {table_name}
                     WHERE {key} = '{value}'
                     """)
                 print(cursor.rowcount)
