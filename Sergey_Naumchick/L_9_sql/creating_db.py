@@ -21,30 +21,5 @@ cursor.execute("""create table if not exists curs(
     country       varchar
 )""")
 
-# cursor.execute(
-#     """
-# insert into curs (customer_name,
-#                        contact_name,
-#                        address,
-#                        city,
-#                        postal_code,
-#                        country)
-# values ('Alfreds Futterkiste ', 'Maria Anders',
-#         'Obere Str. 57', 'Berlin', '12209',
-#         'Germany');
-# """
-# )
-
-
-# cursor.execute(
-#     """
-#     insert into curs (customer_name,
-#                         contact_name,
-#                         address,
-#                         city,
-#                         postal_code,
-#                         country)
-# values ('Sergy Davidenko','Sergey Svay','zabluda strasse','Brovary', '14000','Ukraine');""")
-
 cursor.close()
 conn.close()

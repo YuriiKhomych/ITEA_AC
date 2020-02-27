@@ -1,20 +1,23 @@
 from insert_data import insert_data
-from updating_db import updating_db
+from update_table import updating_table
+from delete_data import  delete_data
 
+insert_data(
+    'curs',
+    'hhhasdsa',
+    'Kiril',
+    'Shevchenko_str',
+    'Kiev',
+    '14000',
+    'Ukraine',
+)
 
-# insert_data(
-#             table_name='curs',
-#             customer_name='Kirill',
-#             contact_name='Svai',
-#             address='Shevchenko_str',
-#             city='Kiev',
-#             postal_code='14000',
-#             country='Ukraine')
+updating_table(
+    # set value
+    'Andrey',
+    # if row meaning = smth
+    contact_name='Kiril',
+)
 
-updating_db(table_name='curs',
-            customer_name='Kirill',
-            contact_name='Svai',
-            address='Shevchenko_str',
-            city='Kiev',
-            postal_code='14000',
-            country='Ukraine')
+    # deleting data
+delete_data('curs',contact_name='Kiril')

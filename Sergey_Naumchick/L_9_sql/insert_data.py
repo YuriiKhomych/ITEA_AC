@@ -1,35 +1,20 @@
-import creating_db
 import psycopg2
+from contextlib import closing
 
 
-def insert_data(
-        table_name,
-        customer_name,
-        contact_name,
-        address,
-        city,
-        postal_code,
-        country,
-):
-    creating_db.conn = psycopg2.connect(
-        dbname="my_shop", user="postgres", password="12011985", host="localhost",
-    )
-    creating_db.conn.autocommit = True
-    creating_db.cursor = creating_db.conn.cursor()
-    creating_db.cursor.execute(f"""
-    insert into {table_name} (
+def insert_data(table_name, *args):
+    with closing(psycopg2.connect(dbname="my_shop",
+                                  user="postgres",
+                                  password="12011985",
+                                  host="localhost", )) as conn:
+        conn.autocommit = True
+        with conn.cursor() as cursor:
+            cursor.execute(f"""insert into {table_name} (
                         customer_name,
                         contact_name,
                         address,
                         city,
                         postal_code,
                         country)
-    values ('{customer_name}',
-            '{contact_name}',
-            '{address}',
-            '{city}',
-            '{postal_code}',
-            '{country}');
+    values {args};
                  """)
-    creating_db.cursor.close()
-    creating_db.conn.close()
