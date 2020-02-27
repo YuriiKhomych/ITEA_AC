@@ -1,8 +1,8 @@
-from insert_data import insert_data
+import insert_data
 from update_table import updating_table
 from delete_data import  delete_data
 
-insert_data(
+insert_data.insert_data(
     'curs',
     'hhhasdsa',
     'Kiril',
