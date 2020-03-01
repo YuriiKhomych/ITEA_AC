@@ -5,7 +5,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 
 def task3(connection, db_name):
-
+    pass
 
 def task2(connection, db_name):
     connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
