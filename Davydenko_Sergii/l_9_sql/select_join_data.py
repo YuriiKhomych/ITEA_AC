@@ -2,7 +2,7 @@ import psycopg2
 from contextlib import closing
 
 
-def different_types(table_name, **kwargs):
+def select_join_data(table_name, table_name2, cloud):
     with closing(psycopg2.connect(
             dbname='home_base',
             user='postgres',
@@ -13,11 +13,8 @@ def different_types(table_name, **kwargs):
         conn.autocommit = True
 
         with conn.cursor() as cursor:
-            for key, value in kwargs.items():
-                cursor.execute(f''' SELECT {key} FROM {table_name}
+            cursor.execute(f''' SELECT * from {table_name} 
+        INNER JOIN {table_name2} 
+        on {table_name}.{cloud}={table_name2}.{cloud};
                 ''')
-            rows = cursor.fetchall()
-
-            for row in rows:
-                print('Customer_name is ', row[0])
-                # print('City', row[0])
+            print("Select is :", cursor.fetchone())
