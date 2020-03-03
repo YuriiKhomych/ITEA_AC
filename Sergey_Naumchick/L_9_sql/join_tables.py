@@ -4,6 +4,4 @@ def join_tab(connection, tab_1, tab_2, category):
                         INNER JOIN {tab_2}
                         ON {tab_1}.{category} = {tab_2}.{category}
              """)
-        a = cursor.fetchall()
-        for i in a:
-            print(i)
+        return cursor.fetchall()
