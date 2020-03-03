@@ -10,7 +10,9 @@ def select_data(table_name, conn, row_name):
                 SELECT  {row_name}
                 FROM {table_name}
                 """)
-        answers = cursor.fetchall()
+        answers_cur = cursor.fetchall()
 
-    for answer in answers:
-        print(answer[0])
+    answers = []
+    for answer in answers_cur:
+        answers.append(answer)
+    return answers

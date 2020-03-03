@@ -1,8 +1,8 @@
-def join_tab(connection, tab_1, tab_2):
+def join_tab(connection, tab_1, tab_2, category):
     with connection.cursor() as cursor:
         cursor.execute(f""" SELECT * FROM {tab_1}
                         INNER JOIN {tab_2}
-                        ON {tab_1}.contact_name = {tab_2}.contact_name
+                        ON {tab_1}.{category} = {tab_2}.{category}
              """)
         a = cursor.fetchall()
         for i in a:

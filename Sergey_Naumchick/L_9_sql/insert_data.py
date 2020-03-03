@@ -1,11 +1,9 @@
-def insert_data(*args, connection, table_name):
+def insert_data(connection, table_name, data):
     with connection.cursor() as cursor:
-        cursor.execute(f"""insert into {table_name} (
-                    name,
-                    contact_name,
-                    address,
-                    city,
-                    postal_code,
-                    country)
-                    values {args};
-                    """)
+        column = ', '.join(data.keys())
+        meaning = ''
+        for value in data.values():
+            meaning += f"'{value}',"
+        print(f"table {table_name} is successfully inputed by data:\n{', '.join(data.values())}")
+        cursor.execute(f"""insert into {table_name} ({column}) 
+                        values ({meaning.rstrip(',')});""")
