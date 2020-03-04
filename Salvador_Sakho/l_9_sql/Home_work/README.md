@@ -8,5 +8,5 @@ Write functions for:
     3. Insert data (3-4 rows) to each table in your database.
     2. Update 2-3 rows in each table in your database data by different where clause.
     2. Delete 1-2 rows in each table in your database data by different where clause.
-    3. Write 4-5 different types of selects.
+    3. Write 4-5 different types of selects (where, like ...).
     6. Select data from two and three tables via joins (2-3 examples).

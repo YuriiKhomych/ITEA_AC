@@ -4,6 +4,31 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 import re
 
 
+# task 6/ task 7
+# Нету смысла выписывать 5 разных видов селекта
+# , когда мы можем дать возможность пользователю
+# самому поределять какой селект он хочет
+def select_data(db_name, query=''):
+    if any(
+            word for word in query.split(' ')
+            if (
+                    word.lower() in
+                    ['delete', 'drop', 'truncate', 'insert', 'update', 'grant']
+            )
+    ):
+        raise Exception(
+            'Данный метод предназначен исключительно для получения данных'
+        )
+    else:
+        connection_object = connection_factory(db_name)
+        cursor = connection_object.cursor()
+        cursor.execute(sql.SQL(query))
+        result_set = cursor.fetchall()
+        cursor.close()
+        connection_object.close()
+        return result_set
+
+
 # task 5
 def delete_data(db_name, table_name, condition_column, condition):
     connection_object = connection_factory(db_name)
@@ -80,7 +105,13 @@ def main():
     #              , ['some another category name', 'some another ditch']))
     # update_data('my_shop_test', 'categories', 'categoryname'
     # , 'New column name' ,'category_id', 2)
-    delete_data('my_shop_test', 'categories', 'category_id', 2)
+    # delete_data('my_shop_test', 'categories', 'category_id', 2)
+
+    result_set = select_data(
+        'my_shop_test', 'select * from orders where customer_id >= 2;'
+    )
+    for data in result_set:
+        print(data)
 
 
 if __name__ == '__main__':
