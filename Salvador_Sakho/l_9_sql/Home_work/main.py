@@ -4,7 +4,33 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 import re
 
 
-# task 6/ task 7
+# task 7
+def select_join(db_name, table_1, table_2, column_tab_1, column_tab_2):
+    connection_object = connection_factory(db_name)
+    cursor = connection_object.cursor()
+    cursor.execute(sql.SQL(f'select * '
+                           f'from {table_1} as tab1 '
+                           f'join '
+                           f'{table_2} as tab2 '
+                           f'on tab1.{column_tab_1} = tab2.{column_tab_2}'))
+    result_set = cursor.fetchall()
+    cursor.close()
+    connection_object.close()
+    return result_set
+
+
+# task 6
+def multiple_selects(db_name, table_1, table_2, column_tab_1, column_tab_2):
+    connection_object = connection_factory(db_name)
+    cursor = connection_object.cursor()
+
+    result_set = cursor.fetchall()
+    cursor.close()
+    connection_object.close()
+    return result_set
+
+
+#  task 7/ task 6
 # Нету смысла выписывать 5 разных видов селекта
 # , когда мы можем дать возможность пользователю
 # самому поределять какой селект он хочет
@@ -107,9 +133,8 @@ def main():
     # , 'New column name' ,'category_id', 2)
     # delete_data('my_shop_test', 'categories', 'category_id', 2)
 
-    result_set = select_data(
-        'my_shop_test', 'select * from orders where customer_id >= 2;'
-    )
+    result_set = select_join('my_shop_test', 'customers', 'orders'
+                             , 'customer_id', 'customer_id')
     for data in result_set:
         print(data)
 
