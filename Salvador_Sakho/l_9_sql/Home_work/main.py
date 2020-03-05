@@ -20,10 +20,12 @@ def select_join(db_name, table_1, table_2, column_tab_1, column_tab_2):
 
 
 # task 6
-def multiple_selects(db_name, table_1, table_2, column_tab_1, column_tab_2):
+def multiple_selects(db_name, table_1, columns='*', where_condition=''):
     connection_object = connection_factory(db_name)
     cursor = connection_object.cursor()
-
+    cursor.execute(sql.SQL(f'select {columns} '
+                           f'from {table_1} as tab1 '
+                           f'{where_condition}'))
     result_set = cursor.fetchall()
     cursor.close()
     connection_object.close()
@@ -133,8 +135,9 @@ def main():
     # , 'New column name' ,'category_id', 2)
     # delete_data('my_shop_test', 'categories', 'category_id', 2)
 
-    result_set = select_join('my_shop_test', 'customers', 'orders'
-                             , 'customer_id', 'customer_id')
+    result_set = multiple_selects('my_shop_test', 'orders'
+                                  , 'customer_id, employeeid'
+                                  ,'where customer_id in  (1,2)')
     for data in result_set:
         print(data)
 
