@@ -4,7 +4,7 @@ import copy
 
 def insight_builder(insights):
     # search only needed keys
-    # make copy of each Insight and create each insight
+    # make copy of each Insight and create each insigh
     m_keys = (
         "metric_name", "api", "report_name", "objective",
         "unit", "currency", "id", "validator_insight_type"
