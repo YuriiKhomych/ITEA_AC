@@ -1,7 +1,6 @@
 from hw_start import insights
 from Davydenko_Sergii.l_2_oop.BaseInsight import BaseInsight
 
-
 for insight in insights:
 
     try:
@@ -10,5 +9,3 @@ for insight in insights:
         print(f"Error: {error}")
     else:
         print(apisnik.__dict__)
-
-

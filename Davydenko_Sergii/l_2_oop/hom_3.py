@@ -8,7 +8,7 @@ def insight_builder(insights):
     m_keys = (
         "metric_name", "api", "report_name", "objective",
         "unit", "currency", "id", "validator_insight_type"
-              )
+    )
     all_keys = {}
     cop = []
 
