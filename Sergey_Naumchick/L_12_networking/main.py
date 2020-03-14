@@ -20,5 +20,6 @@ def ret_header(name, site):
     titles = soup.find(name)
     return titles.text
 
+
 if __name__ == '__main__':
     ret_header('title', 'https://stackoverflow.com')
