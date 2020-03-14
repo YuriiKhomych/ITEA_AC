@@ -13,11 +13,11 @@ def decorate(func):
 
 
 @decorate
-def ret_header(site):
+def ret_header(name, site):
     response = requests.get(site)
     soup = BS(response.content, 'html.parser')
 
-    titles = soup.find('title')
+    titles = soup.find(name)
     return titles.text
 
 
