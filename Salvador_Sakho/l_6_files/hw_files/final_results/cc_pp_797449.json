@@ -5,7 +5,7 @@
         "api": 6,
         "period": 26,
         "entities_affected": {
-            "entities": [
+            "entitimodeles": [
                 {
                     "id": "3dab7e9e-8fc5-485a-a64f-aa97e96f4a5a",
                     "data_connector_id": 6749,
