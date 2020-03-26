@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import ast
 import re
+import sys
 
 breakdowns = []
 analyzer_dict_counter = defaultdict(int)
@@ -115,17 +116,32 @@ def main():
         for key, value in json_file['project_id_to_project_execution'].items():
             for data in value:
                 project_id_to_project_executions[key].append(data)
-    # task 1.2
-    read_analyzer_files(project_id_to_project_executions)
-    print(analyzer_dict_counter, '\n##############')
 
-    # task 1.3
-    read_mid_files()
-    print(mid_dict_counter, '\n##############')
-    # task 1.4
-    read_final_results()
-    print(final_results_dict_counter, '\n##############')
+    if sys.argv[1] == 'all':
+        print(f'breakdowns len: {len(breakdowns)}', '\n##############')
+        # task 1.2
+        read_analyzer_files(project_id_to_project_executions)
+        print(analyzer_dict_counter, '\n##############')
+        # task 1.3
+        read_mid_files()
+        print(mid_dict_counter, '\n##############')
+        # task 1.4
+        read_final_results()
+        print(final_results_dict_counter, '\n##############')
+    elif sys.argv[1] == 'breakdowns':
+        print(f'breakdowns len: {len(breakdowns)}', '\n##############')
+    else:
+        # task 1.2
+        read_analyzer_files(project_id_to_project_executions)
+        print(analyzer_dict_counter, '\n##############')
+        # task 1.3
+        read_mid_files()
+        print(mid_dict_counter, '\n##############')
+        # task 1.4
+        read_final_results()
+        print(final_results_dict_counter, '\n##############')
 
 
 if __name__ == '__main__':
     main()
+
