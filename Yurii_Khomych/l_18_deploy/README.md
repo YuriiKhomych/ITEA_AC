@@ -1,9 +1,16 @@
+### Project up to 13.04.2020
+[Project ideas](http://www.markammay.com/100-creative-ideas-for-a-website/)
+###Projects
+1. [Currency aggregator](https://github.com/YuriiKhomych/currency-aggregator)
+1. [Blog Django](https://github.com/YuriiKhomych/db2-python-django)
+1. [News aggregator](https://github.com/YuriiKhomych/news-aggregator)
 ##Deploy
 1. [Install Docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 1. [Install Docker-Compose](https://docs.docker.com/compose/install/)
 1. [AWS](http://aws.amazon.com)
 1. [GC](https://cloud.google.com)
 1. [Flask blog api tutorial](https://github.com/olawalejarvis/blog_api_tutorial)
+1. [AIOHTTP GRAPHQL](https://medium.com/@chimamireme/setting-up-a-modern-python-web-application-with-aiohttp-graphql-and-docker-149c52657142)
 1. [Swagger](https://cloud.google.com)
 1. [Flask deploy](https://github.com/YuriiKhomych/flask-deploy)
 1. [Deployment](https://www.fullstackpython.com/deployment.html)
@@ -119,3 +126,95 @@
 14. [Task](https://leetcode.com/articles/employee-importance/)
 15. [Task](https://leetcode.com/articles/first-unique-character-in-a-string/)
 16. [Task](https://leetcode.com/articles/binary-search/)
+
+####Deploy app:
+```
+$ ls -a
+$ sudo apt-get update
+$ sudo apt-get upgrade 
+$ git clone https://github.com/YuriiKhomych/aiohttp_blog.git
+$ cd aiohttp_blog/
+$ sudo apt install postgresql postgresql-contrib
+$ psql
+$ psql -U postgres
+$ sudo -i -u postgres
+$ sudo -u postgres psql
+$ sudo apt-get install redis-server
+$ systemctl service status postgres
+$ systemctlstatus postgres
+$ systemctl status postgres
+$ systemctl status postgresql
+$ systemctl status redis-server.service
+$ ls
+$ python
+$ sudo apt install python3
+$ python
+$ python3
+$ git checkout HEAD^
+$ python -m pip install --user virtualenv
+$ python -m pip3 install --user virtualenv
+$ pip
+$ sudo apt install python-pip
+$ pip
+$ python
+$ python3
+$ pip3
+$ sudo apt install python3-pip
+$ sudo pip3 install virtualenv 
+$ virtualenv -p python3 myenv
+$ ls
+$ source myenv/bin/activate
+$ pip install -r requirements.txt 
+$ sudo apt-get install libpq-dev
+$ pip install -r requirements.txt 
+$ python
+$ python run.py -c config/user_config.toml
+$ python db_helpers.py -a
+$ sudo -u postgres psql
+$ python db_helpers.py -a
+$ python run.py -c config/user_config.toml
+$ systemctl stop postgresql
+$ sudo systemctl stop postgresql
+$ sudo systemctl stop redis-server.service 
+$ sudo systemctl status redis-server.service 
+$ sudo systemctl status redis
+$ sudo systemctl status postgresql
+$ sudo apt-get update
+$ sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg-agent     software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+$ sudo docker run hello-world
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+$ docker-compose --version
+$ docker-compose up --build
+$ sudo docker-compose up --build
+$ git checkout master
+$ sudo docker-compose up --build
+$ sudo docker-compose up
+$ sudo docker-compose up -d
+$ docker ps
+$ sudo docker ps
+$ sudo docker kill 609c2dc7204c
+$ sudo docker ps
+$ sudo docker-compose down
+$ sudo docker-compose up
+$ vim Dockerfile 
+$ sudo docker-compose up --build
+$ sudo docker-compose up --force-recreate
+$ git pull
+$ sudo docker-compose up --force-recreate
+$ sudo docker-compose up 
+$ sudo docker-compose up -d
+$ docker ps
+$ sudo docker ps
+$ docker exec -it c7def34e2a43 bash
+$ sudo docker exec -it c7def34e2a43 bash
+$ history
+```
