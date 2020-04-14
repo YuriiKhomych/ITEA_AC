@@ -1,20 +1,8 @@
 class MetricSummary:
-    def __init__(
-        self,
-        metric,
-        metric_level,
-        metric_average,
-        is_outlier,
-        true_sign,
-        sign,
-        mark,
-        unit,
-        metric_name_frontend,
-        mark_key,
-        metric_name_frontend_key,
-        unit_key,
-    ):
 
+    def __init__(self, metric, metric_level, metric_average, is_outlier, true_sign,
+                 sign, mark, unit, metric_name_frontend, mark_key, metric_name_frontend_key,
+                 unit_key):
         self.metric = metric
         self.metric_level = metric_level
         self.metric_average = metric_average
@@ -29,4 +17,4 @@ class MetricSummary:
         self.unit_key = unit_key
 
     def __repr__(self):
-        return f"{self.__dict__}"
+        return f'{self.__dict__}'

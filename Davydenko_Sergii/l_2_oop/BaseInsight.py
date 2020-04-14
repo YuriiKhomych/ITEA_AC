@@ -1,4 +1,3 @@
-from hw_start import insights
 from Davydenko_Sergii.l_2_oop.MetricSummery import MetricSummary
 
 
