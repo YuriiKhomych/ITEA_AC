@@ -50,4 +50,6 @@ class RobotBuilder(Robot):
 
 
 class NewRobot(Robot):
-    pass
+    def __init__(self):
+        self._number = randint(1, 10)
+        self._speed = 15
