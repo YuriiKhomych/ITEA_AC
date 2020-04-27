@@ -48,8 +48,8 @@ class Publisher:
                     )
                 else:
                     return self._notify_subscriber(
-                        self._subscriptions[observable_entities]
-                        , observable_entities
+                        self._subscriptions[observable_entities],
+                        observable_entities
                     )
             return f'There are no changes in: {observable_entities}'
         return 'No such observable entities'
@@ -78,13 +78,13 @@ class Publisher:
     def api(self, subscriber_request):
         if subscriber_request['command'] == 'subscribe':
             return self.__subscribe(
-                subscriber_request['email']
-                , subscriber_request['observable object']
+                subscriber_request['email'],
+                subscriber_request['observable object']
             )
         elif subscriber_request['command'] == 'unsubscribe':
             return self.__unsubscribe(
-                subscriber_request['email']
-                , subscriber_request['observable object']
+                subscriber_request['email'],
+                subscriber_request['observable object']
             )
         elif subscriber_request['command'] == 'get updates':
             return self.check_for_update(
