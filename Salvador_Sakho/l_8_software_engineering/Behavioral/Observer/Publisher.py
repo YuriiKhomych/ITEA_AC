@@ -76,20 +76,12 @@ class Publisher:
         return 'Notifications where sent to subscribers  email'
 
     def api(self, subscriber_request):
-        if subscriber_request['command'] == 'subscribe':
-            return self.__subscribe(
-                subscriber_request['email'],
-                subscriber_request['observable object']
-            )
-        elif subscriber_request['command'] == 'unsubscribe':
-            return self.__unsubscribe(
-                subscriber_request['email'],
-                subscriber_request['observable object']
-            )
-        elif subscriber_request['command'] == 'get updates':
-            return self.check_for_update(
-                subscriber_request['observable object'],
-                subscriber_request['email']
-            )
-        else:
-            return 'No such command'
+        return {
+            'subscribe': self.__subscribe,
+            'unsubscribe': self.__unsubscribe,
+            'get updates': self.check_for_update,
+        }.get(subscriber_request['command'],
+              lambda **kwargs: 'No such command')(
+            subscriber_request['email'],
+            subscriber_request['observable object'],
+        )
